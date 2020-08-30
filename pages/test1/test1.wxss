@@ -1,0 +1,18 @@
+.item {
+  width: 750rpx;
+  height: 200rpx;
+  font-size: 40rpx;
+  color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1rpx solid #eeeeee;
+}

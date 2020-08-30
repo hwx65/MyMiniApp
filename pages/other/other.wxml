@@ -1,0 +1,16 @@
+<!--pages/other/other.wxml-->
+<text>pages/other/other.wxml</text>
+
+<view class = "btn">
+  <button bindtap="clickMe" >返回主界面</button>
+
+  <button bindtap="click_t" >Toast</button>
+
+  <button bindtap="click_discuss">对话框</button>
+
+  <button bindtap="clicksetData">setData: {{data_1}}</button>
+
+
+</view>
+
+<canvas canvas-id="myCanvas"></canvas>

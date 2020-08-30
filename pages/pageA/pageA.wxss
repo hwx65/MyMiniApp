@@ -1,0 +1,8 @@
+/* pages/pageA/pageA.wxss */
+.btn{
+  margin-top: 20rpx;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

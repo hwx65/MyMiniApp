@@ -1,0 +1,5 @@
+<!--pages/pageC/pageC.wxml-->
+<text>pages/pageC/pageC.wxml</text>
+<view class="btn">
+  <button bindtap="call_pageA">与pageA通信</button>
+</view>

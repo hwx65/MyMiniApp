@@ -1,0 +1,3 @@
+<view class="loadmore {{visible && 'visible'}}">
+  <view class="my-loading" wx:if="{{visible}}"></view>
+</view>

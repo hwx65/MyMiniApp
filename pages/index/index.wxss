@@ -1,0 +1,49 @@
+/**index.wxss**/
+
+/* @import "common.wxss";
+.box{
+  width: 400rpx;
+  height: 400rpx;
+  display: block;
+  background-color: antiquewhite;
+} */
+
+
+.box>text:first-child {
+  color: #e4393c;
+}
+
+input:active {
+  border: 1px solid #ddd;
+}
+
+/* .box{
+  width: 400rpx;
+  height: 400rpx;
+  display: block;
+  background-color: antiquewhite;
+} */
+
+.my-name {
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.my-name-new{
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+}
+/* 
+.container{
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+} */

@@ -1,0 +1,11 @@
+<scroll-view scroll-y style="height:{{scrollYHeight}}px"   scroll-top="{{scrollTop}}" bindscroll="bindscroll">
+    <view
+      class="item"
+      wx:for="{{list}}"
+      wx:key="id"
+      wx:for-index="idx"
+    >
+      {{item.name}}
+    </view>
+    <loading visible="{{hasMore}}"></loading>
+</scroll-view>

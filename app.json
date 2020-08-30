@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/other/other",
+    "pages/test1/test1",
+    "pages/test2/test2",
+    "pages/pageA/pageA",
+    "pages/pageC/pageC"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0ff",
+    "navigationBarTitleText": "测试小程序",
+    "navigationBarTextStyle":"black"
+  },
+
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      { "text": "Tab1", "pagePath": "pages/other/other" },
+      { "text": "Tab2", "pagePath": "pages/test1/test1" },
+      { "text": "Tab3", "pagePath": "pages/test2/test2" }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  }
+}
