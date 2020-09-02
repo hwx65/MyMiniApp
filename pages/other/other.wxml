@@ -4,6 +4,8 @@
 <view class = "btn">
   <button bindtap="clickMe" >返回主界面</button>
 
+  <button bindtap="clicktoPageA">转到PageA</button>
+
   <button bindtap="click_t" >Toast</button>
 
   <button bindtap="click_discuss">对话框</button>
