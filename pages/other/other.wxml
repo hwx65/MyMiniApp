@@ -6,13 +6,5 @@
 
   <button bindtap="clicktoPageA">转到PageA</button>
 
-  <button bindtap="click_t" >Toast</button>
-
-  <button bindtap="click_discuss">对话框</button>
-
-  <button bindtap="clicksetData">setData: {{data_1}}</button>
-
-
 </view>
 
-<canvas canvas-id="myCanvas"></canvas>

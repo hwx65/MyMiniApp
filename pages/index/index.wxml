@@ -1,58 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-  <!-- <view class="box">
-    <text>呐喊彷徨：</text>
-    <input placeholder="输入作者名字" />
-  </view> -->
-  <!-- <text class="{{defaultClass}}" style="color:#0ff;background:{{backgroudColor}};display:block">{{myName}}</text>
-  <button bindtap="setName">点我</button> -->
-
   <view>{{ msg }}</view>
   <button bindtap="clickMe">转到Tab</button>
-  
   <button bindtap="clickto_pageA"> 转到pageA </button>
-
-  <button bindtap="clickoversize">越界</button>
-  <button bindtap="clickforeverloop">try-catch</button>
-  <button bindtap="clickglobalData">globalData</button>
   <button bindtap="clicksetData">setData:{{data}}</button>
   <button bindtap="clicktrigger">trigger</button>
-<!-- 
-  <view style="color: red; font-size: 48rpx">abc</view>
-  <view style="color: {{eleColor}}; font-size: {{eleFontsize}}">abc</view>
-  <view>{{text}}</view>
-  <view>{{array[0].msg}}</view> -->
-
-
-  <!-- <view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view> -->
-
-<!-- <view
-  id="outer"
-  bind:touchstart="handleTap1"
-  capture-bind:touchstart="handleTap2"
->
-  outer view
-  <view
-    id="inner"
-    bind:touchstart="handleTap3"
-    capture-bind:touchstart="handleTap4"
-  >
-    inner view
-  </view>
-</view> -->
-
-  <!-- <text class='box'>1</text> -->
-  <!-- <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view> -->
-  <!-- <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view> -->
-  <!-- <view>
-     <image bindload='imgLoad' src='https://i0.hdslb.com/bfs/live/6c41e9f57094fae13728cd27e7d1c1379a3f1fcd.jpg@320w_330h_1c_100q.webp'></image>
-  </view> -->
 </view>

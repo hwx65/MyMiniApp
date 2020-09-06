@@ -2,24 +2,7 @@
 <text>pages/pageA/pageA.wxml</text>
 
 <view class="btn">
-  <button bindtap="clickto_pageC">转到pageC</button>
-  <view>{{helloMsg}}</view>
-  
-</view>
-<view class="btn">
-  <button bindtap='clickMe' data-id='100100001000000000000000000000000000000000000000000000000000000000000000000000000'>页面函数传参</button>
-</view>
-
-<view class="btn">
-  <button bindtap='clickSetData' >setData:{{bigdata}}</button>
-</view>
-
-<view class="btn">
-  <button bindtap='clickSetTimes' >setDatas:{{datas}}</button>
-</view>
-
-<view class="btn">
-  <button bindtap='clickRun' >Running?</button>
+  <button bindtap="clickto_pageC">转到pageC</button>  
 </view>
 
 
