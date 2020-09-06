@@ -16,18 +16,13 @@ Page({
       url: '../pageA/pageA',
     })
   },
-  clickforeverloop:function(){
-    try{
-      var x = new Array(-10);
-      console.log(x);
-      fjdfn = 5;
-    }catch(error){
-      console.log("---try-catch---"+error);
-      var ss = new Array(-5);
-    }finally{
-      console.log("执行结束啦");
-    }
-  },
+  clickoversize:function(){
+     var x = 5/0.0/0;
+    var pi = 3.14159; 
+    pi.toFixed(100000);  
+    console.log(pi);   //参数范围越界
+ },
+  
   clickglobalData:function(){
     for(var i = 0; i < 1000000; i++)
       app.globalData.id +="158295952";
