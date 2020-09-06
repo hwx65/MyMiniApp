@@ -16,12 +16,6 @@ Page({
       url: '../pageA/pageA',
     })
   },
-  clickoversize:function(){
-     var x = 5/0.0/0;
-    var pi = 3.14159; 
-    pi.toFixed(100000);  
-    console.log(pi);   //参数范围越界
- },
   clickforeverloop:function(){
     try{
       var x = new Array(-10);
