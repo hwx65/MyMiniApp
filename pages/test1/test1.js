@@ -5,9 +5,9 @@ let lastRequestTime = 0;
 Page({
   data: {
     list: [],
-    hasMore: true,//列表是否有数据未加载
+    hasMore: true,
     page: 1,
-    size: 8,//每页8条数据
+    size: 8,
     scrollYHeight: 0,//scroll-view高度
   },
   bindscroll: function (e) {
