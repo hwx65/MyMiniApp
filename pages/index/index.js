@@ -31,6 +31,9 @@ Page({
     })
   },
   onLoad: function (option) {
+    this.setData({
+      data:5
+    })
     console.log('---onLoad---')
   },
   onReady: function () {
