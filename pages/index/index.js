@@ -3,7 +3,8 @@ const app = getApp()
 
 Page({
   data:{
-    data:0
+    data:0,
+    trigger:true,
   },
   clickMe: function() {
     wx.switchTab({
@@ -26,9 +27,13 @@ Page({
   },
 
   clicktrigger:function(){
-    this.setData({
-      data:this.data.data
-    })
+    var x = isLogined => {
+      this.setData({
+        trigger : isLogined
+      })
+      console.log("yyyyy")
+    }
+    x(false)
   },
   onLoad: function (option) {
     this.setData({
