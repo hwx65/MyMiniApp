@@ -5,6 +5,7 @@ Page({
   data:{
     data:0,
     trigger:true,
+    windowHeight:0,
   },
   clickMe: function() {
     wx.switchTab({
@@ -36,9 +37,15 @@ Page({
     x(false)
   },
   onLoad: function (option) {
-    this.setData({
-      data:5
-    })
+    console.log("this is first time" + this);
+    let _this = this
+    wx.getSystemInfo({
+      success (res){
+        console.log("this is second time" +  this)
+        this.setData({windowHeight: res.windowHeight});
+      }
+    });
+    console.log(this.data.windowHeight)
     console.log('---onLoad---')
   },
   onReady: function () {
