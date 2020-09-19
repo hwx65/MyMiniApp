@@ -26,7 +26,6 @@ Page({
       data:this.data.data
     })
   },
-
   clicktrigger:function(){
     var x = isLogined => {
       this.setData({
@@ -36,17 +35,8 @@ Page({
     }
     x(false)
   },
-  onLoad: function (option) {
-    console.log("this is first time" + this);
-    let _this = this
-    wx.getSystemInfo({
-      success (res){
-        console.log("this is second time" +  this)
-        this.setData({windowHeight: res.windowHeight});
-      }
-    });
-    console.log(this.data.windowHeight)
-    console.log('---onLoad---')
+  onLoad:function(){
+    console.log(this)
   },
   onReady: function () {
     console.log("page ---onReady---");
