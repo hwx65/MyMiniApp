@@ -26,17 +26,15 @@ Page({
       data:this.data.data
     })
   },
-  clicktrigger:function(){
-    try {
-      var value = wx.getStorageSync('key');
-      if (value) {
-        console.log(value);
-      };
-    } catch (e) {
-      // Do something when catch error
-    };
-    console.log("getstorge");
+  async clicktrigger(){
+    var temp = await wx.getStorage({key:'key'});
+    console.log("temp: "+temp);
   },
+  // clicktrigger:function(){
+  //   var temp = wx.getStorageSync('key');
+  //   console.log(temp);
+  // },
+
   onLoad:function(){
     console.log(this)
     wx.setStorage({
