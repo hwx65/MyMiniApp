@@ -27,16 +27,22 @@ Page({
     })
   },
   clicktrigger:function(){
-    var x = isLogined => {
-      this.setData({
-        trigger : isLogined
-      })
-      console.log("yyyyy")
-    }
-    x(false)
+    try {
+      var value = wx.getStorageSync('key');
+      if (value) {
+        console.log(value);
+      };
+    } catch (e) {
+      // Do something when catch error
+    };
+    console.log("getstorge");
   },
   onLoad:function(){
     console.log(this)
+    wx.setStorage({
+      key:"key",
+      data:"value"
+    });
   },
   onReady: function () {
     console.log("page ---onReady---");
