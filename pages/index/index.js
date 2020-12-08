@@ -3,6 +3,10 @@ const app = getApp()
 
 Page({
   data:{
+    xxx:{
+      p:1,
+      q:2
+    },
     data:0,
     trigger:true,
     windowHeight:0,
@@ -19,21 +23,33 @@ Page({
   },
 
   clicksetData:function(){
-    this.data.data++
-    console.log(this.data.data)
-    var x = new Array(-5);
+    var temp = "11111111111111111111111111111111111"
+    for(i = 0; i < 1; i++){
+      temp = temp + temp
+    }
+    var time = new Date().getTime()
+    // for(i = 0; i < 8000; i++){
+    //   this.setData({
+    //     data:i,
+    //     xx:i
+    //   })
+    // }
+    console.log(temp)
     this.setData({
-      data:this.data.data
+      data:temp,
+    })
+    var time2 = new Date().getTime()
+    var usetime = time2 - time
+    console.log(usetime)
+  },
+  clicktrigger:function(){
+    this.setData({
+      data:0,
+      xxx:{
+        p:"ADSfafd"
+      }
     })
   },
-  async clicktrigger(){
-    var temp = await wx.getStorage({key:'key'});
-    console.log("temp: "+temp);
-  },
-  // clicktrigger:function(){
-  //   var temp = wx.getStorageSync('key');
-  //   console.log(temp);
-  // },
 
   onLoad:function(){
     console.log(this)

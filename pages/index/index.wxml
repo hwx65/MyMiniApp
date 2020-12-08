@@ -4,5 +4,5 @@
   <button bindtap="clickMe">转到Tab</button>
   <button bindtap="clickto_pageA"> 转到pageA </button>
   <button bindtap="clicksetData">setData:{{data}}</button>
-  <button bindtap="clicktrigger">trigger:{{trigger}}</button>
+  <button bindtap="clicktrigger">trigger:{{xxx.p}}</button>
 </view>
